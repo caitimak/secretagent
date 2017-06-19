@@ -54,13 +54,12 @@ h4 {
 }
 
 .headline {
-  box-sizing: border-box;
   background-color: black;
   color: white;
   width: 20rem;
   position: relative;
   top: 9em;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
 .headline h4 {
@@ -136,4 +135,63 @@ footer {
   background-color: black;
   color: white;
   padding: 2rem 0;
+}
+
+.container.tablet {
+  display: none;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+  .product {
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
+  ul.container {
+    display:none;
+  }
+  .container.tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.77rem;
+  }
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .mainbanner {
+    height: 15rem;
+  }
+  .productgrid {
+    justify-content: center;
+  }
+  .product {
+    width: 90%;
+  }
+  .product.watch {
+    display: none;
+  }
+  .business {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
 }
